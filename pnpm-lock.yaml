@@ -8,6 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@fortawesome/fontawesome-free':
+        specifier: ^7.0.1
+        version: 7.0.1
+      '@fortawesome/fontawesome-svg-core':
+        specifier: ^7.0.1
+        version: 7.0.1
+      '@picocss/pico':
+        specifier: ^2.1.1
+        version: 2.1.1
       next:
         specifier: 15.5.3
         version: 15.5.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -88,6 +97,18 @@ packages:
   '@eslint/plugin-kit@0.3.5':
     resolution: {integrity: sha512-Z5kJ+wU3oA7MMIqVR9tyZRtjYPr4OC004Q4Rw7pgOKUOKkJfZ3O24nz3WYfGRpMDNmcOi3TwQOmgm7B7Tpii0w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@fortawesome/fontawesome-common-types@7.0.1':
+    resolution: {integrity: sha512-0VpNtO5cNe1/HQWMkl4OdncYK/mv9hnBte0Ew0n6DMzmo3Q3WzDFABHm6LeNTipt5zAyhQ6Ugjiu8aLaEjh1gg==}
+    engines: {node: '>=6'}
+
+  '@fortawesome/fontawesome-free@7.0.1':
+    resolution: {integrity: sha512-RLmb9U6H2rJDnGxEqXxzy7ANPrQz7WK2/eTjdZqyU9uRU5W+FkAec9uU5gTYzFBH7aoXIw2WTJSCJR4KPlReQw==}
+    engines: {node: '>=6'}
+
+  '@fortawesome/fontawesome-svg-core@7.0.1':
+    resolution: {integrity: sha512-x0cR55ILVqFpUioSMf6ebpRCMXMcheGN743P05W2RB5uCNpJUqWIqW66Lap8PfL/lngvjTbZj0BNSUweIr/fHQ==}
+    engines: {node: '>=6'}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -303,6 +324,9 @@ packages:
   '@nolyfill/is-core-module@1.0.39':
     resolution: {integrity: sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA==}
     engines: {node: '>=12.4.0'}
+
+  '@picocss/pico@2.1.1':
+    resolution: {integrity: sha512-kIDugA7Ps4U+2BHxiNHmvgPIQDWPDU4IeU6TNRdvXQM1uZX+FibqDQT2xUOnnO2yq/LUHcwnGlu1hvf4KfXnMg==}
 
   '@rtsao/scc@1.1.0':
     resolution: {integrity: sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==}
@@ -1614,6 +1638,14 @@ snapshots:
       '@eslint/core': 0.15.2
       levn: 0.4.1
 
+  '@fortawesome/fontawesome-common-types@7.0.1': {}
+
+  '@fortawesome/fontawesome-free@7.0.1': {}
+
+  '@fortawesome/fontawesome-svg-core@7.0.1':
+    dependencies:
+      '@fortawesome/fontawesome-common-types': 7.0.1
+
   '@humanfs/core@0.19.1': {}
 
   '@humanfs/node@0.16.7':
@@ -1764,6 +1796,8 @@ snapshots:
       fastq: 1.19.1
 
   '@nolyfill/is-core-module@1.0.39': {}
+
+  '@picocss/pico@2.1.1': {}
 
   '@rtsao/scc@1.1.0': {}
 
