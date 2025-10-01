@@ -6,7 +6,11 @@ interface Props {
   withRefetch?: boolean;
 }
 const Clock: FC<Props> = async ({ withRefetch }) => {
+  // This clock will not refresh in production mode when refreshing the browser.
   const res = await fetch("http://localhost:3001/clock");
+  // const res = await fetch("http://localhost:3001/clock", {
+  //   next: { revalidate: 1 },
+  // });
   const json = await res.json();
   const clock = json.data;
 
